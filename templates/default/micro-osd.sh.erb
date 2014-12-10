@@ -31,6 +31,10 @@ ceph-deploy install --release $CEPH_VERSION `hostname`
 ceph-deploy pkg --install <%= node['ceph_micro']['librados'] %> `hostname`
 ceph-deploy pkg --install <%= node['ceph_micro']['librbd'] %> `hostname`
 
+<% if node.platform_family?("rhel") %>
+ceph-deploy pkg --install <%= node['ceph_micro']['ceph-includes'] %> `hostname`
+<% end %>
+
 # get rid of process and directories leftovers
 pkill ceph-mon || true
 pkill ceph-osd || true
