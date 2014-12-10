@@ -1,0 +1,1 @@
+../../default/bats/check_ceph.bats

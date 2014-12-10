@@ -1,0 +1,6 @@
+name              'setup_tests'
+maintainer        'Sofer Athlan-Guyot'
+maintainer_email  'chem@sathlan.org'
+license           'Apache 2.0'
+description       'A support cookbook for the ceph_micro tests'
+version           '1.0.0'
