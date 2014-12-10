@@ -1,7 +1,8 @@
 # ceph_micro-cookbook
 
 This cookbook installs ceph using Loïc Dachary script described in
-[this article](http://dachary.org/?p=2374).
+[this article](http://dachary.org/?p=2374).  It adds support for multi platform
+and the development files.
 
 Eventually here is the result:
 
@@ -17,7 +18,7 @@ vagrant@default-ubuntu-1204:/vagrant$ ceph -c  /tmp/micro-ceph/ceph.conf  -s
 ```
 
 This is not suitable for production environment, but is very convenient for
-testing.
+testing and development.
 
 ## Supported Platforms
 
